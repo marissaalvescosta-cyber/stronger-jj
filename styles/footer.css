@@ -1,168 +1,166 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stronger BJJ | Stronger Fisioterapia</title>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+/* BODY */
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
 
-  <style>
-    body {
-      background: #0f0f0f;
-      color: white;
-    }
-  </style>
-</head>
+/* HERO */
+.hero {
+  min-height: 100vh;
+  text-align: center;
+  padding: 80px 20px;
+}
 
-<body>
+.hero-logo {
+  width: 220px;
+  margin-bottom: 30px;
+}
 
-<!-- ================= HERO ================= -->
-<section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
 
-  <!-- LOGO PRIMEIRO -->
-  <img
-    src="/assets/logo-stronger-bjj.png"
-    alt="Stronger BJJ"
-    class="w-44 md:w-56 mb-8"
-  />
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.2rem;
+  color: #e5e5e5;
+}
 
-  <h1 class="text-4xl md:text-5xl font-bold mb-4">
-    Stronger BJJ
-  </h1>
+.cta-button {
+  background: #8b0000;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-  <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-200">
-    Fisioterapia esportiva aplicada ao jiu-jitsu para quem quer treinar com mais
-    segurança, estabilidade e confiança.
-  </p>
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+}
 
-  <a
-    href="https://wa.me/5511932427523?text=Oi%2C%20vim%20buscando%20o%20Stronger%20BJJ%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-    class="bg-red-700 hover:bg-red-800 transition px-10 py-4 rounded-xl font-semibold"
-  >
-    Quero garantir minha vaga
-  </a>
-</section>
+.light {
+  background: #f5f5f5;
+  color: black;
+}
 
-<!-- ================= PARA QUEM ================= -->
-<section class="bg-gray-100 text-black py-20 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8">Para quem é o Stronger BJJ</h2>
-    <ul class="space-y-4 text-lg">
-      <li>✔ Já sofreu botinha e sente instabilidade</li>
-      <li>✔ Já levou americana e ficou com dor no ombro</li>
-      <li>✔ Lombar sobrecarregada após os treinos</li>
-      <li>✔ Quer prevenir lesões e continuar treinando</li>
-    </ul>
-  </div>
-</section>
+.white {
+  background: white;
+  color: black;
+}
 
-<!-- ================= QUEM SOU EU ================= -->
-<section class="bg-white text-black py-20 px-6">
-  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
 
-    <div>
-      <h2 class="text-3xl font-bold mb-6">Quem está por trás do Stronger BJJ</h2>
-      <p class="text-lg mb-4">
-        Meu nome é <strong>Marissa Alves</strong>, sou fisioterapeuta ortopédica e esportiva,
-        fundadora da Stronger Fisioterapia e praticante de jiu-jitsu.
-      </p>
-      <p class="text-lg">
-        O Stronger BJJ nasceu da união da prática clínica com a vivência no tatame,
-        ajudando atletas a treinarem com mais segurança e confiança.
-      </p>
-    </div>
+.container ul li {
+  margin-bottom: 10px;
+}
 
-    <div class="flex justify-center">
-      <div class="text-center">
-        <img
-          src="/assets/Faixa Roxa.JPEG"
-          class="w-64 h-64 object-cover rounded-2xl mb-3"
-          alt="Marissa Alves faixa roxa"
-        />
-        <p class="text-sm text-gray-600">
-          Fisioterapeuta esportiva • Faixa roxa de Jiu-Jitsu
-        </p>
-      </div>
-    </div>
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
 
-  </div>
-</section>
+.center {
+  text-align: center;
+}
 
-<!-- ================= FAQ ================= -->
-<section class="bg-gray-100 text-black py-20 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-10">Perguntas frequentes</h2>
+/* PROFILE */
+.profile-image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
 
-    <details class="mb-4">
-      <summary class="font-semibold cursor-pointer">
-        O Stronger BJJ substitui musculação ou jiu-jitsu?
-      </summary>
-      <p class="mt-2">
-        Não. Ele complementa o treino, preparando o corpo para suportar melhor as
-        exigências do tatame.
-      </p>
-    </details>
+.caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
 
-    <details class="mb-4">
-      <summary class="font-semibold cursor-pointer">
-        Posso fazer mesmo sem dor?
-      </summary>
-      <p class="mt-2">
-        Sim. O foco principal é prevenção e estabilidade.
-      </p>
-    </details>
+/* FAQ */
+details {
+  margin-bottom: 15px;
+}
 
-    <details>
-      <summary class="font-semibold cursor-pointer">
-        Consigo reembolso pelo plano?
-      </summary>
-      <p class="mt-2">
-        Fornecemos toda a documentação necessária para solicitação de reembolso.
-      </p>
-    </details>
-  </div>
-</section>
+summary {
+  font-weight: 600;
+  cursor: pointer;
+}
 
-<!-- ================= FOOTER (IGUAL STRONGER) ================= -->
-<footer style="background:#0f0f0f;padding:40px 20px;text-align:center;">
+/* FOOTER */
+.footer {
+  background: #0f0f0f;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-  <div style="display:flex;justify-content:center;align-items:center;gap:20px;margin-bottom:20px;">
-    <img src="/assets/logo-stronger-bjj.png" style="height:48px;" />
-    <a href="https://instagram.com/strongerfisioterapia" target="_blank">
-      <img src="/assets/icon-instagram.png" style="height:32px;width:32px;" />
-    </a>
-  </div>
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 20px;
+}
 
-  <p style="color:#cfcfcf;font-size:14px;">
-    © 2026 Stronger Fisioterapia. Todos os direitos reservados.
-  </p>
-</footer>
+.footer-logo {
+  height: 48px;
+}
 
-<!-- ================= WHATSAPP FLUTUANTE (OFICIAL) ================= -->
-<a
-  href="https://wa.me/5511932427523?text=Oi%2C%20vim%20buscando%20o%20Stronger%20BJJ%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-  target="_blank"
-  style="
-    position:fixed;
-    right:24px;
-    bottom:24px;
-    width:56px;
-    height:56px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.35);
-    z-index:9999;
-  "
->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" fill="white">
-    <path d="M16 0C7.16 0 0 7.16 0 16c0 2.84.74 5.61 2.15 8.06L0 32l8.23-2.11A15.93 15.93 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0z"/>
-  </svg>
-</a>
+.footer-instagram {
+  width: 32px;
+  height: 32px;
+}
 
-</body>
-</html>
+.footer-text {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  z-index: 9999;
+}
+
+.whatsapp-float svg {
+  width: 26px;
+  height: 26px;
+  fill: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    width: 180px;
+  }
+}
