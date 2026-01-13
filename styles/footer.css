@@ -1,88 +1,203 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* VARIÁVEIS */
+:root {
+  --red: #9b0000;
+  --text: #111;
+  --gray: #666;
+  --bg-light: #ffffff;
+  --radius: 18px;
+}
+
+/* BASE */
 body {
-  font-family: system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
   line-height: 1.6;
 }
 
+/* BOTÕES */
+.btn-primary {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* UTILIDADES */
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+/* HERO */
 .hero {
-  min-height: 100vh;
-  background: #0f0f0f;
-  color: #ffffff;
+  min-height: 90vh;
+  padding: 80px 20px 60px;
   text-align: center;
-  padding: 80px 20px;
 }
 
 .hero-logo {
-  width: 220px;
-  margin-bottom: 30px;
+  width: 250px;
+  margin-bottom: 28px;
 }
 
-.cta-button {
-  background: #8b0000;
-  color: #fff;
-  padding: 16px 36px;
-  border-radius: 12px;
-  text-decoration: none;
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0 auto 16px;
 }
 
+.hero p {
+  color: var(--gray);
+  margin-bottom: 32px;
+}
+
+/* SEÇÕES */
 .section {
   padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.section.light {
-  background: #f5f5f5;
-  color: #000;
+.section h2 {
+  font-size: 2rem;
+  color: var(--red);
+  margin-bottom: 12px;
 }
 
-.section.white {
-  background: #ffffff;
-  color: #000;
+.subtitle {
+  color: var(--gray);
+  margin-bottom: 40px;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.grid {
+/* CARDS */
+.cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.profile-image {
-  width: 260px;
-  border-radius: 16px;
-}
-
-.footer {
-  background: #0f0f0f;
-  padding: 40px;
-  text-align: center;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-.footer-instagram {
-  width: 32px;
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-.footer-text {
-  color: #cfcfcf;
-  font-size: 14px;
+/* DUAS COLUNAS */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* IMAGENS */
+.rounded-img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.text p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 24px;
+}
+
+.social-icon {
+  width: 140px;
+  margin-bottom: 16px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .grid {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-logo {
+    width: 200px;
+  }
+
+  .section {
+    padding: 60px 16px;
+  }
+
+  .two-columns {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .whatsapp-float img {
+    width: 120px;
+  }
+
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .social-icon {
+    width: 100px;
   }
 }
