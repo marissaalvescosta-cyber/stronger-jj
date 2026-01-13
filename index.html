@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stronger BJJ | Stronger Fisioterapia</title>
+  <meta name="description" content="Fisioterapia esportiva aplicada ao jiu-jitsu para quem quer treinar com mais segurança, estabilidade e confiança." />
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -13,7 +14,7 @@
       --stronger-black: #0b0b0b;
     }
 
-    /* WHATSAPP FLUTUANTE */
+    /* WHATSAPP FLUTUANTE – PADRÃO STRONGER */
     .whatsapp-float {
       position: fixed;
       right: 24px;
@@ -29,25 +30,22 @@
       z-index: 999;
       transition: transform 0.2s ease;
     }
-
     .whatsapp-float:hover {
       transform: scale(1.08);
     }
-
     .whatsapp-float svg {
       width: 26px;
       height: 26px;
       fill: #fff;
     }
 
-    /* FOOTER */
+    /* FOOTER – PADRÃO STRONGER */
     footer {
       background: var(--stronger-black);
       padding: 60px 20px;
       text-align: center;
       color: #ccc;
     }
-
     .footer-icons {
       display: flex;
       justify-content: center;
@@ -55,18 +53,15 @@
       gap: 40px;
       margin-bottom: 24px;
     }
-
     .footer-icons img {
       width: 36px;
       height: 36px;
       transition: transform 0.2s ease, opacity 0.2s ease;
     }
-
     .footer-icons img:hover {
       transform: scale(1.1);
       opacity: 0.85;
     }
-
     .footer-copy {
       font-size: 14px;
       color: #aaa;
@@ -95,8 +90,61 @@
   </a>
 </section>
 
-<!-- QUEM SOU EU -->
+<!-- PARA QUEM -->
+<section class="py-20 px-6 bg-gray-100">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8">Para quem é o Stronger BJJ</h2>
+    <ul class="space-y-4 text-lg">
+      <li>✔ Já sofreu botinha e sente instabilidade no joelho ou tornozelo</li>
+      <li>✔ Já levou americana e ficou com desconforto no ombro</li>
+      <li>✔ Sente a lombar sobrecarregada após treinos intensos</li>
+      <li>✔ Já teve alguma lesão no jiu-jitsu e quer evitar que ela volte</li>
+      <li>✔ Treina regularmente e quer continuar evoluindo com segurança</li>
+    </ul>
+    <p class="mt-6 text-sm text-gray-600">❌ Não indicado para dor aguda ou lesão recente.</p>
+  </div>
+</section>
+
+<!-- O PROGRAMA -->
 <section class="py-20 px-6">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-3xl font-bold mb-6">O programa</h2>
+      <p class="text-lg mb-4">
+        Programa estruturado de <strong>12 semanas</strong>, com sessões semanais de
+        <strong>45 minutos</strong>, focado em prevenção de lesões e estabilidade.
+      </p>
+      <ul class="space-y-3">
+        <li>• Estabilidade de joelho, tornozelo e quadril</li>
+        <li>• Proteção e fortalecimento de ombros e cotovelos</li>
+        <li>• CORE e controle lombar</li>
+        <li>• Preparação para as demandas reais do tatame</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-100 p-8 rounded-2xl">
+      <h3 class="text-xl font-semibold mb-4">Informações principais</h3>
+      <ul class="space-y-2 text-sm text-gray-700">
+        <li><strong>Duração:</strong> 12 semanas</li>
+        <li><strong>Frequência:</strong> 1x por semana</li>
+        <li><strong>Sessão:</strong> 45 minutos</li>
+        <li><strong>Grupo:</strong> até 3 atletas</li>
+        <li class="italic text-gray-600 pt-2">
+          *Também pode ser realizado de forma individual. Entre em contato para mais informações.
+        </li>
+      </ul>
+
+      <div class="mt-6 border-t pt-4 text-sm text-gray-700">
+        <strong>Reembolso de plano de saúde</strong><br />
+        Fornecemos toda a documentação necessária para solicitação de reembolso,
+        conforme as regras do seu convênio.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM SOU EU -->
+<section class="py-20 px-6 bg-white">
   <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     <div>
       <h2 class="text-3xl font-bold mb-6">Quem está por trás do Stronger BJJ</h2>
@@ -105,14 +153,15 @@
         fundadora da <strong>Stronger Fisioterapia</strong> e praticante de jiu-jitsu.
       </p>
       <p class="text-lg">
-        O Stronger BJJ une clínica e tatame para ajudar atletas a treinarem com mais
-        segurança, estabilidade e confiança — sem precisar parar por dor ou lesão.
+        Criei o Stronger BJJ unindo a vivência no tatame com a prática clínica,
+        para ajudar atletas a continuarem treinando com mais segurança,
+        estabilidade e confiança — sem precisar parar por dor ou lesão.
       </p>
     </div>
 
     <div class="text-center">
       <img src="/assets/Faixa Roxa.JPEG"
-           alt="Marissa Alves faixa roxa"
+           alt="Marissa Alves faixa roxa de Jiu-Jitsu"
            class="w-64 h-64 mx-auto object-cover object-top rounded-2xl shadow mb-3" />
       <p class="text-sm text-gray-600">
         Fisioterapeuta esportiva • Faixa roxa de Jiu-Jitsu
@@ -121,29 +170,62 @@
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- FAQ COMPLETA -->
 <section class="py-20 px-6 bg-gray-100">
   <div class="max-w-5xl mx-auto">
     <h2 class="text-3xl font-bold mb-10">Perguntas frequentes</h2>
 
     <details class="border-b pb-4 mb-4">
-      <summary class="font-semibold cursor-pointer">Isso substitui musculação ou jiu-jitsu?</summary>
+      <summary class="font-semibold cursor-pointer">Esse programa é fisioterapia ou treino?</summary>
       <p class="mt-3 text-gray-700">
-        Não. O Stronger BJJ complementa o treino, preparando o corpo para suportar melhor
-        as exigências do tatame.
+        O Stronger BJJ é um programa de fisioterapia esportiva aplicada ao jiu-jitsu.
+        Ele não substitui o treino técnico nem a musculação.
       </p>
     </details>
 
     <details class="border-b pb-4 mb-4">
-      <summary class="font-semibold cursor-pointer">Posso fazer mesmo sem dor?</summary>
+      <summary class="font-semibold cursor-pointer">Posso fazer mesmo sem estar com dor?</summary>
       <p class="mt-3 text-gray-700">
-        Sim. O foco principal é prevenção e estabilidade.
+        Sim. O programa é indicado principalmente para prevenção e estabilidade,
+        mesmo para quem não sente dor no momento.
+      </p>
+    </details>
+
+    <details class="border-b pb-4 mb-4">
+      <summary class="font-semibold cursor-pointer">Tive uma lesão recente, posso participar?</summary>
+      <p class="mt-3 text-gray-700">
+        Casos de dor aguda ou lesão recente precisam de avaliação individual antes
+        de iniciar o programa.
+      </p>
+    </details>
+
+    <details class="border-b pb-4 mb-4">
+      <summary class="font-semibold cursor-pointer">Consigo pedir reembolso pelo plano de saúde?</summary>
+      <p class="mt-3 text-gray-700">
+        Sim. Fornecemos toda a documentação necessária para solicitação de reembolso,
+        conforme as regras do seu convênio.
+      </p>
+    </details>
+
+    <details class="border-b pb-4 mb-4">
+      <summary class="font-semibold cursor-pointer">O Stronger BJJ substitui musculação ou jiu-jitsu?</summary>
+      <p class="mt-3 text-gray-700">
+        Não. Ele complementa sua rotina de treinos, preparando o corpo para suportar
+        melhor as exigências do tatame.
+      </p>
+    </details>
+
+    <details class="border-b pb-4">
+      <summary class="font-semibold cursor-pointer">E se eu não conseguir comparecer em alguma sessão?</summary>
+      <p class="mt-3 text-gray-700">
+        Avisando com pelo menos 3 horas de antecedência, a sessão poderá ser remarcada
+        conforme disponibilidade dentro do mesmo ciclo.
       </p>
     </details>
   </div>
 </section>
 
-<!-- FOOTER (PADRÃO STRONGER) -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-icons">
     <img src="/assets/logo-stronger-fisioterapia.png" alt="Stronger Fisioterapia" />
