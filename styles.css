@@ -1,199 +1,34 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stronger BJJ | Stronger Fisioterapia</title>
+/* OBSERVAÇÃO DO PROGRAMA */
+.program-note {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 32px;
+  max-width: 700px;
+}
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
+.program-note .note {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #555;
+}
 
-<body>
+/* FAQ INTERATIVO */
+.faq details {
+  margin-bottom: 16px;
+}
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-logo">
-        <img src="assets/logo-stronger-bjj.png" alt="Stronger BJJ">
-      </div>
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
 
-      <div class="hero-text">
-        <h1>Stronger BJJ</h1>
-        <p>
-          Fisioterapia esportiva aplicada ao jiu-jitsu para quem quer treinar com
-          mais segurança, estabilidade e confiança.
-        </p>
+.faq p {
+  margin-top: 10px;
+  max-width: 700px;
+}
 
-        <a href="#contato" class="btn-primary">
-          Quero garantir minha vaga
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA QUEM -->
-  <section class="section">
-    <h2>Para quem é o Stronger BJJ</h2>
-    <ul class="list">
-      <li>✔ Já sofreu uma <strong>botinha</strong> e sente instabilidade no joelho ou tornozelo</li>
-      <li>✔ Já levou uma <strong>americana</strong> e ficou com desconforto no ombro</li>
-      <li>✔ Sente a <strong>lombar sobrecarregada</strong> após treinos intensos</li>
-      <li>✔ Já teve alguma lesão no jiu-jitsu e quer evitar que ela volte</li>
-      <li>✔ Treina regularmente e quer continuar evoluindo com segurança</li>
-    </ul>
-    <p class="warning">❌ Não indicado para dor aguda ou lesão recente.</p>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section class="section gray">
-    <h2>Como funciona o Stronger BJJ</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Fase 0 — Avaliação individual</h3>
-        <p>
-          Avaliação detalhada de força, mobilidade, estabilidade e histórico de
-          lesões, direcionando todo o programa.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Fase 1 — Base e controle</h3>
-        <p>
-          Construção de base sólida com foco em controle motor, CORE, quadril,
-          joelho, tornozelo e ombro.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Fase 2 — Força e estabilidade</h3>
-        <p>
-          Evolução do fortalecimento com exercícios progressivos e unilaterais.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Fase 3 — Integração ao jiu-jitsu</h3>
-        <p>
-          Integração da força e estabilidade aos gestos reais do tatame.
-        </p>
-      </div>
-    </div>
-
-    <!-- OBSERVAÇÃO DO FORMATO (PEQUENA, DENTRO DA SEÇÃO) -->
-    <div class="program-note">
-      <p>
-        O Stronger BJJ é realizado em <strong>grupos pequenos de até 3 pessoas</strong>,
-        com sessões de <strong>40 minutos</strong>, podendo ser realizado
-        <strong>1 ou 2 vezes por semana</strong>.
-      </p>
-      <p class="note">
-        * Caso prefira atendimento <strong>individual</strong>, é necessário entrar em contato
-        para mais informações sobre formato e valores.
-      </p>
-    </div>
-
-  </section>
-
-  <!-- QUEM SOU EU -->
-  <section class="section two-columns">
-    <div>
-      <h2>Quem está por trás do Stronger BJJ</h2>
-      <p>
-        Meu nome é <strong>Marissa Alves</strong>, fisioterapeuta ortopédica e
-        esportiva, fundadora da Stronger Fisioterapia e praticante de jiu-jitsu.
-      </p>
-      <p>
-        O Stronger BJJ nasce da união entre prática clínica e vivência real no
-        tatame, com foco em segurança, longevidade e performance.
-      </p>
-    </div>
-
-    <div class="photo">
-      <img src="assets/Faixa Roxa.JPEG" alt="Marissa Alves faixa roxa">
-      <span>Fisioterapeuta esportiva • Faixa roxa de Jiu-Jitsu</span>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section faq gray">
-    <div class="faq-content">
-      <h2>Perguntas frequentes</h2>
-
-      <details>
-        <summary>Esse programa substitui musculação ou treino?</summary>
-        <p>
-          Não. O Stronger BJJ não substitui a musculação nem o treino técnico.
-          Ele complementa sua rotina, ajudando a reduzir o risco de lesões e
-          melhorar a estabilidade para o jiu-jitsu.
-        </p>
-      </details>
-
-      <details>
-        <summary>Posso fazer mesmo sem dor?</summary>
-        <p>
-          Sim. O programa é indicado principalmente para quem não está com dor
-          aguda, mas já teve lesões, instabilidades ou sobrecargas.
-        </p>
-      </details>
-
-      <details>
-        <summary>Tive uma lesão recente, posso participar?</summary>
-        <p>
-          Depende. Casos de lesão recente ou dor aguda precisam de avaliação
-          individual antes da inclusão no programa.
-        </p>
-      </details>
-
-      <details>
-        <summary>Consigo pedir reembolso pelo plano de saúde?</summary>
-        <p>
-          Sim. O programa é conduzido por fisioterapeuta e fornecemos toda a
-          documentação necessária para solicitação de reembolso conforme as
-          regras do seu convênio.
-        </p>
-      </details>
-
-      <details>
-        <summary>E se eu faltar?</summary>
-        <p>
-          Avisos com antecedência mínima permitem remarcação conforme
-          disponibilidade. Ausências sem aviso não dão direito à reposição.
-        </p>
-      </details>
-
-    </div>
-  </section>
-
-  <!-- CTA FINAL (MESMO PRETO DO FOOTER) -->
-  <section id="contato" class="cta black">
-    <h2>Cuidar do corpo também faz parte do treino</h2>
-    <a
-      href="https://wa.me/5511932427523?text=Oi%2C%20vim%20pela%20p%C3%A1gina%20do%20Stronger%20BJJ"
-      target="_blank"
-      class="btn-primary"
-    >
-      Falar no WhatsApp
-    </a>
-  </section>
-
-  <!-- FOOTER (NÃO ALTERADO) -->
-  <footer>
-    <img src="assets/logo-stronger-fisioterapia.png" alt="Stronger Fisioterapia">
-    <a href="https://instagram.com/strongerfisioterapia" target="_blank">
-      <img src="assets/icon-instagram.png" alt="Instagram">
-    </a>
-    <p>© Stronger Fisioterapia • Todos os direitos reservados</p>
-  </footer>
-
-  <!-- WHATSAPP FLOAT -->
-  <a
-    href="https://wa.me/5511932427523"
-    target="_blank"
-    class="whatsapp-float"
-  >
-    <img src="assets/icon-whatsapp.png" alt="WhatsApp">
-  </a>
-
-</body>
-</html>
+/* CTA PRETO IGUAL FOOTER */
+.cta.black {
+  background: #000;
+}
