@@ -27,7 +27,7 @@ body {
 }
 
 .hero-logo img {
-  max-width: 340px;
+  max-width: 320px;
 }
 
 .hero-text h1 {
@@ -87,7 +87,7 @@ body {
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
 
@@ -97,18 +97,17 @@ body {
   border-radius: 20px;
 }
 
-/* OBSERVAÇÃO DO PROGRAMA */
-.program-note {
-  background: #fff;
-  border-radius: 20px;
-  padding: 24px;
-  margin-top: 32px;
-  max-width: 720px;
+.card-highlight {
+  border: 2px solid #e0e0e0;
 }
 
-.program-note .note {
-  margin-top: 12px;
+.card p {
   font-size: 0.95rem;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 0.85rem;
   color: #555;
 }
 
@@ -139,29 +138,21 @@ body {
   margin-left: 120px;
 }
 
-.faq details {
-  margin-bottom: 18px;
+details {
+  margin-bottom: 16px;
 }
 
-.faq summary {
+summary {
   font-weight: 600;
   cursor: pointer;
 }
 
-.faq p {
-  margin-top: 10px;
-  max-width: 720px;
-}
-
 /* CTA */
 .cta {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.cta.black {
   background: #000;
   color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .cta h2 {
@@ -181,7 +172,7 @@ footer img {
   margin: 10px;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp-float {
   position: fixed;
   right: 24px;
@@ -191,8 +182,6 @@ footer img {
 
 .whatsapp-float img {
   width: 44px;
-  height: auto;
-  background: transparent;
 }
 
 /* RESPONSIVO */
@@ -211,11 +200,6 @@ footer img {
   }
 
   .faq-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .whatsapp-float img {
-    width: 42px;
+    margin: 0 20px;
   }
 }
