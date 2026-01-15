@@ -131,15 +131,6 @@ body {
   margin-bottom: 20px;
 }
 
-.micro-cta {
-  margin-top: 30px;
-  font-weight: bold;
-}
-
-.center {
-  text-align: center;
-}
-
 /* DUAS COLUNAS */
 .two-columns {
   display: grid;
