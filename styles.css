@@ -27,7 +27,7 @@ body {
 }
 
 .hero-logo img {
-  max-width: 320px;
+  max-width: 420px;
 }
 
 .hero-text h1 {
@@ -43,8 +43,8 @@ body {
 .btn-primary {
   background: #8b0000;
   color: #fff;
-  padding: 16px 32px;
-  border-radius: 16px;
+  padding: 16px 36px;
+  border-radius: 18px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -62,20 +62,35 @@ body {
   margin-bottom: 40px;
 }
 
-/* FUNDO CINZA STRONGER */
+/* BACKGROUNDS */
 .gray {
   background: #f1f1f1;
   max-width: 100%;
 }
 
-/* LISTA LIMPA */
-.list-clean {
+.gray-stronger {
+  background: #f1f1f1;
+  max-width: 100%;
+}
+
+/* LISTA CHECK */
+.list-check {
   list-style: none;
 }
 
-.list-clean li {
-  margin-bottom: 12px;
+.list-check li {
+  margin-bottom: 14px;
+  padding-left: 28px;
+  position: relative;
   font-weight: 500;
+}
+
+.list-check li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #8b0000;
+  font-weight: bold;
 }
 
 /* CARDS */
@@ -159,10 +174,8 @@ body {
   cursor: pointer;
 }
 
-/* CTA */
-.footer-black {
-  background: #000;
-  color: #fff;
+/* CTA FINAL */
+.cta {
   text-align: center;
   padding: 100px 20px;
 }
