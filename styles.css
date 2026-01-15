@@ -1,10 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #111;
+}
+
+/* HERO */
+.hero {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-logo img {
+  max-width: 340px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* BOTÃO */
+.btn-primary {
+  background: #8b0000;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* FUNDO CINZA */
+.gray {
+  background: #f3f3f3;
+  max-width: 100%;
+}
+
+/* LISTAS */
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+.warning {
+  margin-top: 20px;
+  color: #b00020;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 20px;
+}
+
 /* OBSERVAÇÃO DO PROGRAMA */
 .program-note {
   background: #fff;
   border-radius: 20px;
   padding: 24px;
   margin-top: 32px;
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .program-note .note {
@@ -13,9 +112,35 @@
   color: #555;
 }
 
-/* FAQ INTERATIVO */
+/* DUAS COLUNAS */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  width: 280px;
+  border-radius: 24px;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 0;
+}
+
+.faq-content {
+  max-width: 900px;
+  margin-left: 120px;
+}
+
 .faq details {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .faq summary {
@@ -25,10 +150,72 @@
 
 .faq p {
   margin-top: 10px;
-  max-width: 700px;
+  max-width: 720px;
 }
 
-/* CTA PRETO IGUAL FOOTER */
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 100px 20px;
+}
+
 .cta.black {
   background: #000;
+  color: #fff;
+}
+
+.cta h2 {
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer img {
+  max-width: 120px;
+  margin: 10px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 44px;
+  height: auto;
+  background: transparent;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-logo {
+    order: -1;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .whatsapp-float img {
+    width: 42px;
+  }
 }
