@@ -62,15 +62,21 @@ body {
   margin-bottom: 40px;
 }
 
-/* BACKGROUNDS */
+/* BACKGROUNDS FULL */
 .gray {
   background: #f1f1f1;
-  max-width: 100%;
 }
 
 .gray-stronger {
   background: #f1f1f1;
-  max-width: 100%;
+}
+
+/* INNER */
+.section-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 /* LISTA CHECK */
@@ -143,7 +149,9 @@ body {
 
 .about-text {
   max-width: 520px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 40px;
 }
 
 .photo {
@@ -177,12 +185,6 @@ body {
 .faq summary {
   font-weight: bold;
   cursor: pointer;
-}
-
-/* CTA FINAL */
-.cta {
-  text-align: center;
-  padding: 100px 20px;
 }
 
 /* FOOTER */
@@ -224,6 +226,7 @@ body {
 
   .about-text {
     max-width: 100%;
+    padding-right: 0;
   }
 
   .hero-logo img {
