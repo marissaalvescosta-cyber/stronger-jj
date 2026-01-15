@@ -1,45 +1,23 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIÁVEIS */
-:root {
-  --red: #9b0000;
-  --black: #0f0f0f;
-  --gray: #f5f5f5;
-  --text: #111;
-}
-
-/* BASE */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: var(--text);
-  background: #fff;
-  line-height: 1.7;
-}
-
-/* BOTÕES */
-.btn-primary {
-  display: inline-block;
-  background: var(--red);
-  color: #fff;
-  padding: 16px 32px;
-  border-radius: 14px;
-  text-decoration: none;
-  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #111;
 }
 
 /* HERO */
 .hero {
-  background: var(--black);
+  background: #0f0f0f;
   color: #fff;
-  padding: 100px 24px;
+  padding: 100px 20px;
 }
 
-.hero-content {
+.hero-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -48,116 +26,136 @@ body {
   align-items: center;
 }
 
-.hero-logo {
+.hero-logo img {
   max-width: 320px;
 }
 
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .hero-text p {
-  max-width: 520px;
-  margin-bottom: 32px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* BOTÃO */
+.btn-primary {
+  background: #8b0000;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /* SEÇÕES */
 .section {
+  padding: 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 24px;
 }
 
-.section.gray {
-  background: var(--gray);
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* FUNDO CINZA */
+.gray {
+  background: #f3f3f3;
   max-width: 100%;
 }
 
-/* LISTA */
+/* LISTAS */
 .list {
-  max-width: 700px;
-  margin-top: 32px;
+  list-style: none;
 }
 
 .list li {
   margin-bottom: 12px;
 }
 
-/* FASES */
-.phases {
+.warning {
+  margin-top: 20px;
+  color: #b00020;
+}
+
+/* CARDS */
+.cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  margin-top: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
-.phase {
+.card {
   background: #fff;
-  padding: 32px;
-  border-radius: 18px;
+  padding: 24px;
+  border-radius: 20px;
 }
 
-/* ABOUT */
-.about {
+/* DUAS COLUNAS */
+.two-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  gap: 60px;
 }
 
-.about-image img {
-  width: 100%;
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  width: 280px;
   border-radius: 24px;
+  margin-bottom: 10px;
 }
 
-.about-image span {
-  display: block;
-  margin-top: 12px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* FAQ — AJUSTE AQUI */
+/* FAQ */
 .faq {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 100px 40px;
+  padding: 80px 0;
+}
+
+.faq-content {
+  max-width: 900px;
+  margin-left: 120px; /* desloca para a direita */
 }
 
 .faq-list {
-  margin-top: 32px;
+  list-style: none;
 }
 
 .faq-list li {
-  margin-bottom: 14px;
-  font-weight: 500;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 /* CTA */
 .cta {
-  background: var(--black);
+  background: #0f0f0f;
   color: #fff;
   text-align: center;
-  padding: 100px 24px;
+  padding: 100px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
 footer {
-  background: var(--black);
+  background: #000;
   color: #ccc;
   text-align: center;
-  padding: 60px 24px;
+  padding: 60px 20px;
 }
 
-.footer-logo {
-  width: 120px;
-  margin-bottom: 24px;
-}
-
-.social-icon {
-  width: 48px;
-  margin-bottom: 16px;
+footer img {
+  max-width: 120px;
+  margin: 10px;
 }
 
 /* WHATSAPP FLOAT */
@@ -169,26 +167,32 @@ footer {
 }
 
 .whatsapp-float img {
-  width: 64px;
+  width: 44px; /* ÍCONE MENOR */
+  height: auto;
+  background: transparent;
 }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  .hero-content {
+  .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
   .hero-logo {
-    margin: 0 auto 32px;
+    order: -1;
   }
 
-  .phases,
-  .about {
+  .two-columns {
     grid-template-columns: 1fr;
   }
 
-  .faq {
-    padding: 80px 24px;
+  .faq-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .whatsapp-float img {
+    width: 42px;
   }
 }
