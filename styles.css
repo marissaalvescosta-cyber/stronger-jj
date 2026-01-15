@@ -14,7 +14,7 @@ body {
 .hero {
   background: #0f0f0f;
   color: #fff;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero-container {
@@ -27,12 +27,16 @@ body {
 }
 
 .hero-logo img {
-  max-width: 340px;
+  max-width: 320px;
 }
 
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+}
+
+.hero-cta {
+  margin-top: 30px;
 }
 
 /* BOTÃO */
@@ -43,6 +47,7 @@ body {
   border-radius: 16px;
   font-weight: bold;
   text-decoration: none;
+  display: inline-block;
 }
 
 /* SEÇÕES */
@@ -57,10 +62,20 @@ body {
   margin-bottom: 40px;
 }
 
-/* FUNDO CINZA */
+/* FUNDO CINZA STRONGER */
 .gray {
-  background: #f3f3f3;
+  background: #f1f1f1;
   max-width: 100%;
+}
+
+/* LISTA LIMPA */
+.list-clean {
+  list-style: none;
+}
+
+.list-clean li {
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 /* CARDS */
@@ -76,111 +91,12 @@ body {
   border-radius: 20px;
 }
 
-/* NOVA SEÇÃO PROGRAMA */
-.program-section {
-  padding-top: 100px;
-}
-
+/* PROGRAMA */
 .program-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 60px;
 }
 
-.program-list {
-  margin-top: 20px;
-}
-
-.program-list li {
-  margin-bottom: 10px;
-}
-
 .program-card {
-  background: #f3f3f3;
-  padding: 32px;
-  border-radius: 24px;
-}
-
-.program-card h3 {
-  margin-bottom: 20px;
-}
-
-.program-card hr {
-  margin: 20px 0;
-}
-
-.obs {
-  font-size: 0.9rem;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-/* DUAS COLUNAS */
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
-.photo {
-  text-align: center;
-}
-
-.photo img {
-  width: 300px;
-  border-radius: 24px;
-}
-
-/* FAQ */
-.faq details {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 16px;
-}
-
-.faq summary {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* CTA */
-.footer-black {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-/* FOOTER */
-footer {
-  background: #000;
-  color: #ccc;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-/* WHATSAPP */
-.whatsapp-float {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-}
-
-.whatsapp-float img {
-  width: 44px;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .hero-container,
-  .two-columns,
-  .program-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
+  background: #
