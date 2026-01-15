@@ -141,6 +141,11 @@ body {
   gap: 60px;
 }
 
+.about-text {
+  max-width: 520px;
+  margin: auto;
+}
+
 .photo {
   text-align: center;
 }
@@ -215,5 +220,14 @@ body {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .hero-logo img {
+    max-width: 280px;
+    margin: auto;
   }
 }
